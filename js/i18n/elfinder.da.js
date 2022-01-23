@@ -2,7 +2,7 @@
  * Danish translation
  * @author Mark Topper (webman.io)
  * @author Helmuth Mikkelsen <helmuthm@gmail.com>
- * @version 2020-11-27
+ * @version 2022-01-23
  */
 (function(root, factory) {
 	if (typeof define === 'function' && define.amd) {
@@ -17,9 +17,9 @@
 		translator : 'Mark Topper (webman.io), Helmuth Mikkelsen &lt;helmuthm@gmail.com&gt;',
 		language   : 'Danish',
 		direction  : 'ltr',
-		dateFormat : 'd.m.Y H:i', // will show like: 27.11.2020 11:50
-		fancyDateFormat : '$1 H:i', // will show like: I dag 11:50
-		nonameDateFormat : 'Ymd-His', // noname upload will show like: 20201127-115006
+		dateFormat : 'd.m.Y H:i', // will show like: 23.01.2022 14:14
+		fancyDateFormat : '$1 H:i', // will show like: I dag 14:14
+		nonameDateFormat : 'Ymd-His', // noname upload will show like: 20220123-141430
 		messages   : {
 
 			/********************************** errors **********************************/
@@ -94,9 +94,9 @@
 			'errResizeNoChange'    : 'Billedstørrelse ikke ændret.',  // added 7.3.2013
 			'errUsupportType'      : 'Ikke-understøttet filtype.',
 			'errNotUTF8Content'    : 'Filen "$1" er ikke i UTF-8 og kan ikke blive redigeret.',  // added 9.11.2011
-			'errNetMount'          : 'Kunne ikke mounte "$1".', // added 17.04.2012
+			'errNetMount'          : 'Kunne ikke montere "$1".', // added 17.04.2012
 			'errNetMountNoDriver'  : 'Ikke-understøttet protokol.',     // added 17.04.2012
-			'errNetMountFailed'    : 'Mount mislykkedes.',         // added 17.04.2012
+			'errNetMountFailed'    : 'Montering mislykkedes.',         // added 17.04.2012
 			'errNetMountHostReq'   : 'Værten kræves.', // added 18.04.2012
 			'errSessionExpires'    : 'Din session er udløbet på grund af inaktivitet.',
 			'errCreatingTempDir'   : 'Kunne ikke oprette midlertidig mappe: "$1"',
@@ -105,7 +105,7 @@
 			'errFtpMkdir'          : 'Kunne ikke oprette fjernmappe på FTP: "$1"',
 			'errArchiveExec'       : 'Fejl under arkivering af filer: "$1"',
 			'errExtractExec'       : 'Fejl under udpakning af filer: "$1"',
-			'errNetUnMount'        : 'Kan ikke unmounte.', // from v2.1 added 30.04.2012
+			'errNetUnMount'        : 'Kan ikke afmontere.', // from v2.1 added 30.04.2012
 			'errConvUTF8'          : 'Kan ikke konverteres til UTF-8', // from v2.1 added 08.04.2014
 			'errFolderUpload'      : 'Prøv den nyeste browser, hvis du vil uploade mappen.', // from v2.1 added 26.6.2015
 			'errSearchTimeout'     : 'Time out under søgning på "$1". Søgeresultatet er delvis.', // from v2.1 added 12.1.2016
@@ -116,6 +116,7 @@
 			'errServerError'       : 'Der opstod en fejl på serversiden.', // from v2.1.25 added 16.6.2017
 			'errEmpty'             : 'Kunne ikke tømme mappen "$1".', // from v2.1.25 added 22.6.2017
 			'moreErrors'           : 'Der er $1 flere fejl.', // from v2.1.44 added 9.12.2018
+			'errMaxMkdirs'         : 'Du kan oprette op til $1 mapper ad gangen.', // from v2.1.58 added 20.6.2021
 
 			/******************************* commands names ********************************/
 			'cmdarchive'   : 'Opret arkiv',
@@ -148,8 +149,8 @@
 			'cmdview'      : 'Vis',
 			'cmdresize'    : 'Tilpas størrelse & Roter',
 			'cmdsort'      : 'Sorter',
-			'cmdnetmount'  : 'Mount netværksdrev', // added 18.04.2012
-			'cmdnetunmount': 'Unmount', // from v2.1 added 30.04.2012
+			'cmdnetmount'  : 'Monter netværksdrev', // added 18.04.2012
+			'cmdnetunmount': 'Afmonter', // from v2.1 added 30.04.2012
 			'cmdplaces'    : 'Til steder', // added 28.12.2014
 			'cmdchmod'     : 'Skift tilstand', // from v2.1 added 20.6.2015
 			'cmdopendir'   : 'Åbn en mappe', // from v2.1 added 13.1.2016
@@ -171,12 +172,12 @@
 			'btnSave'   : 'Gem',
 			'btnRm'     : 'Slet',
 			'btnApply'  : 'Anvend',
-			'btnCancel' : 'Annuler',
+			'btnCancel' : 'Annuller',
 			'btnNo'     : 'Nej',
 			'btnYes'    : 'Ja',
-			'btnMount'  : 'Mount',  // added 18.04.2012
+			'btnMount'  : 'Monter',  // added 18.04.2012
 			'btnApprove': 'Gå til $1 & godkend', // from v2.1 added 26.04.2012
-			'btnUnmount': 'Unmount', // from v2.1 added 30.04.2012
+			'btnUnmount': 'Afmonter', // from v2.1 added 30.04.2012
 			'btnConv'   : 'Konverter', // from v2.1 added 08.04.2014
 			'btnCwd'    : 'Her',      // from v2.1 added 22.5.2015
 			'btnVolume' : 'Diskenhed',    // from v2.1 added 22.5.2015
@@ -376,18 +377,18 @@
 			'rotate-cw'       : 'Roter 90 grader med uret',
 			'rotate-ccw'      : 'Roter 90 grader mod uret',
 			'degree'          : 'Grader',
-			'netMountDialogTitle' : 'Mount netwærkdrev', // added 18.04.2012
+			'netMountDialogTitle' : 'Monter netwærkdrev', // added 18.04.2012
 			'protocol'            : 'Protokol', // added 18.04.2012
 			'host'                : 'Vært', // added 18.04.2012
 			'port'                : 'Port', // added 18.04.2012
 			'user'                : 'Bruger', // added 18.04.2012
 			'pass'                : 'Kodeord', // added 18.04.2012
-			'confirmUnmount'      : 'Unmounter du $1?',  // from v2.1 added 30.04.2012
+			'confirmUnmount'      : 'Afmonterer du $1?',  // from v2.1 added 30.04.2012
 			'dropFilesBrowser': 'Slip eller indsæt filer fra browseren', // from v2.1 added 30.05.2012
 			'dropPasteFiles'  : 'Slip filer, indsæt webadresser eller billeder (udklipsholder) her', // from v2.1 added 07.04.2014
-			'encoding'        : 'Encoding', // from v2.1 added 19.12.2014
+			'encoding'        : 'Indkodning', // from v2.1 added 19.12.2014
 			'locale'          : 'Locale',   // from v2.1 added 19.12.2014
-			'searchTarget'    : 'Target: $1',                // from v2.1 added 22.5.2015
+			'searchTarget'    : 'Mål: $1',                // from v2.1 added 22.5.2015
 			'searchMime'      : 'Søg efter input MIME-type', // from v2.1 added 22.5.2015
 			'owner'           : 'Ejer', // from v2.1 added 20.6.2015
 			'group'           : 'Gruppe', // from v2.1 added 20.6.2015
@@ -534,7 +535,7 @@
 			'kindCHeader'     : 'C header-kode',
 			'kindCPP'         : 'C++-kode',
 			'kindCPPHeader'   : 'C++ header-kode',
-			'kindShell'       : 'Unix shell script',
+			'kindShell'       : 'Unix shell-script',
 			'kindPython'      : 'Python-kode',
 			'kindJava'        : 'Java-kode',
 			'kindRuby'        : 'Ruby-kode',
@@ -544,7 +545,7 @@
 			'kindAWK'         : 'AWK-kode',
 			'kindCSV'         : 'Komma seperarede værdier',
 			'kindDOCBOOK'     : 'Docbook XML-dokument',
-			'kindMarkdown'    : 'Markdown text', // added 20.7.2015
+			'kindMarkdown'    : 'Markdown tekst', // added 20.7.2015
 			// images
 			'kindImage'       : 'Billede',
 			'kindBMP'         : 'BMP-billede',
